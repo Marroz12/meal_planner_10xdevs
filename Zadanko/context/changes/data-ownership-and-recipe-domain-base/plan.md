@@ -272,12 +272,12 @@ Finalize confidence in safety and operability with policy checks, integration ve
 
 #### Automated
 
-- [ ] 3.1 SQL policy tests pass for allow/deny matrix
-- [ ] 3.2 Recipes API integration smoke suite passes in CI-capable local setup
-- [ ] 3.3 Perf check reports list/read p95 within target for representative data size
-- [ ] 3.4 npm run lint and npm run build pass after test and script additions
+- [x] 3.1 SQL policy tests pass for allow/deny matrix — 4858727
+- [x] 3.2 Recipes API integration smoke suite passes in CI-capable local setup — 4858727
+- [x] 3.3 Perf check reports list/read p95 within target for representative data size — 4858727
+- [x] 3.4 npm run lint and npm run build pass after test and script additions — 4858727
 
 #### Manual
 
-- [ ] 3.5 Logs include structured auth-operation and recipe-operation events for key API actions
-- [ ] 3.6 Human reviewer can execute rollback checklist for migration and confirm expected reversal path
+- [x] 3.5 Logs include structured auth-operation and recipe-operation events for key API actions — 4858727
+- [x] 3.6 Human reviewer can execute rollback checklist for migration and confirm expected reversal path — 4858727

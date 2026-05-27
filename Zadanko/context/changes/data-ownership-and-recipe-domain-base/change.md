@@ -1,7 +1,7 @@
 ---
 change_id: data-ownership-and-recipe-domain-base
 title: Implement foundation F-01 from roadmap
-status: implementing
+status: implemented
 created: 2026-05-27
 updated: 2026-05-27
 archived_at: null
