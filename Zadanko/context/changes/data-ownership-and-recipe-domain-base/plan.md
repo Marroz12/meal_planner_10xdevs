@@ -243,30 +243,30 @@ Finalize confidence in safety and operability with policy checks, integration ve
 
 #### Automated
 
-- [x] 1.1 Migration applies in local/dev environment without SQL errors
-- [x] 1.2 RLS policies deny cross-user read/update/delete in policy verification scenarios
-- [x] 1.3 Type checking passes for added shared types and service contracts
-- [x] 1.4 Linting passes for new migration metadata and TypeScript files
+- [x] 1.1 Migration applies in local/dev environment without SQL errors — db35219
+- [x] 1.2 RLS policies deny cross-user read/update/delete in policy verification scenarios — db35219
+- [x] 1.3 Type checking passes for added shared types and service contracts — db35219
+- [x] 1.4 Linting passes for new migration metadata and TypeScript files — db35219
 
 #### Manual
 
-- [x] 1.5 Two separate test users cannot access each other's recipes through direct query/API attempts
-- [x] 1.6 Soft-deleted recipe is no longer returned in default user recipe listing
+- [x] 1.5 Two separate test users cannot access each other's recipes through direct query/API attempts — db35219
+- [x] 1.6 Soft-deleted recipe is no longer returned in default user recipe listing — db35219
 
 ### Phase 2: Recipes API Contracts and Service Integration
 
 #### Automated
 
-- [x] 2.1 API smoke tests pass for authenticated create/list/update/delete happy paths
-- [x] 2.2 API smoke tests pass for unauthenticated and unauthorized ownership scenarios
-- [x] 2.3 Validation failure scenarios return stable JSON error code contracts
-- [x] 2.4 Build and lint pass with new API and utility modules
+- [x] 2.1 API smoke tests pass for authenticated create/list/update/delete happy paths — cc6313b
+- [x] 2.2 API smoke tests pass for unauthenticated and unauthorized ownership scenarios — cc6313b
+- [x] 2.3 Validation failure scenarios return stable JSON error code contracts — cc6313b
+- [x] 2.4 Build and lint pass with new API and utility modules — cc6313b
 
 #### Manual
 
-- [x] 2.5 Browser/manual call flow can create recipe and immediately retrieve it for same user
-- [x] 2.6 Attempts to mutate another user's recipe are blocked with expected API semantics
-- [x] 2.7 Error payloads are readable and actionable in UI/network inspection
+- [x] 2.5 Browser/manual call flow can create recipe and immediately retrieve it for same user — cc6313b
+- [x] 2.6 Attempts to mutate another user's recipe are blocked with expected API semantics — cc6313b
+- [x] 2.7 Error payloads are readable and actionable in UI/network inspection — cc6313b
 
 ### Phase 3: Verification, Observability, and Performance Guardrails
 
