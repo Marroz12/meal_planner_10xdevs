@@ -316,10 +316,10 @@ Extend the update API (type, validation schema, service, handler) to accept an o
 #### Manual
 
 - [ ] 1.4 Unauthenticated user navigating to /recipes is redirected to /auth/signin
-- [ ] 1.5 Logged-in user with no recipes sees empty state with Add Recipe CTA
-- [ ] 1.6 Logged-in user with existing recipes sees card grid
-- [ ] 1.7 Each card shows name, description preview, prep time, and ingredient count
-- [ ] 1.8 Topbar shows Recipes link when logged in; navigates to /recipes
+- [x] 1.5 ~~Logged-in user with no recipes sees empty state with Add Recipe CTA~~
+- [x] 1.6 Logged-in user with existing recipes sees card grid
+- [x] 1.7 Each card shows name, description preview, prep time, and ingredient count
+- [x] 1.8 ~~Topbar shows Recipes link when logged in; navigates to /recipes~~
 
 ### Phase 2: Recipe Create Form
 
@@ -331,13 +331,13 @@ Extend the update API (type, validation schema, service, handler) to accept an o
 
 #### Manual
 
-- [ ] 2.4 Add Recipe links navigate to /recipes/new
-- [ ] 2.5 Form renders with name, description, prep time, and ingredient section
-- [ ] 2.6 Add ingredient button adds a new row; × button removes it
-- [ ] 2.7 Submitting with empty name shows inline error below name field
-- [ ] 2.8 Submitting with blank ingredient name shows inline error on that row
-- [ ] 2.9 Valid submission creates recipe and redirects to /recipes with new card
-- [ ] 2.10 Prep time entered as 30 shows 30 min on the recipe card
+- [x] 2.4 ~~Add Recipe links navigate to /recipes/new~~
+- [x] 2.5 ~~Form renders with name, description, prep time, and ingredient section~~
+- [x] 2.6 Add ingredient button adds a new row; × button removes it
+- [x] 2.7 Submitting with empty name shows inline error below name field
+- [x] 2.8 Submitting with blank ingredient name shows inline error on that row
+- [x] 2.9 ~~Valid submission creates recipe and redirects to /recipes with new card~~
+- [x] 2.10 Prep time entered as 30 shows 30 min on the recipe card
 
 ### Phase 3: Recipe Edit & Delete
 
@@ -349,8 +349,8 @@ Extend the update API (type, validation schema, service, handler) to accept an o
 
 #### Manual
 
-- [ ] 3.4 Recipe card click navigates to /recipes/[id]/edit with form pre-filled
-- [ ] 3.5 Editing and saving updates the card on /recipes
-- [ ] 3.6 Adding/removing ingredient rows in edit mode persists new ingredient set
-- [ ] 3.7 Accessing non-existent recipe edit URL redirects to /recipes
-- [ ] 3.8 Delete confirmation removes recipe and redirects to /recipes
+- [x] 3.4 Recipe card click navigates to /recipes/[id]/edit with form pre-filled
+- [x] 3.5 Editing and saving updates the card on /recipes
+- [x] 3.6 Adding/removing ingredient rows in edit mode persists new ingredient set
+- [x] 3.7 Accessing non-existent recipe edit URL redirects to /recipes
+- [x] 3.8 ~~Delete confirmation removes recipe and redirects to /recipes~~
