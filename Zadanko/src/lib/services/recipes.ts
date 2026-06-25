@@ -66,19 +66,20 @@ export async function createRecipe(
   }
 
   if (payload.ingredients && payload.ingredients.length > 0) {
-    const ingredientRows = payload.ingredients.map((ing) => ({
-      recipe_id: recipe.id,
-      name: ing.name,
-      quantity: ing.quantity ?? null,
-      unit: ing.unit ?? null,
-      storage_type: ing.storage_type ?? "fresh",
-    }));
+    const { data: created, error: rpcError } = await supabase.rpc("create_recipe_with_ingredients", {
+      p_payload: {
+        name: payload.name,
+        description: payload.description ?? null,
+        prep_time_minutes: payload.prep_time_minutes ?? null,
+      },
+      p_ingredients: payload.ingredients,
+    });
 
-    const { error: ingError } = await supabase.from("recipe_ingredients").insert(ingredientRows);
-
-    if (ingError) {
-      return { data: recipe as Recipe, error: ingError };
+    if (rpcError || !created) {
+      return { data: null, error: rpcError };
     }
+
+    return { data: created as Recipe, error: null };
   }
 
   return { data: recipe as Recipe, error: null };

@@ -61,10 +61,7 @@ export const GET: APIRoute = async (context) => {
     });
     return idCheck.response;
   }
-  const recipeId = idCheck.recipeId;
-  if (!recipeId) {
-    return jsonError("VALIDATION_ERROR", "Recipe id is required", 400);
-  }
+  const recipeId = idCheck.recipeId!;
 
   const { data, error } = await getRecipe(auth.supabase, auth.userId, recipeId);
   if (error) {
@@ -122,10 +119,7 @@ export const PATCH: APIRoute = async (context) => {
     });
     return idCheck.response;
   }
-  const recipeId = idCheck.recipeId;
-  if (!recipeId) {
-    return jsonError("VALIDATION_ERROR", "Recipe id is required", 400);
-  }
+  const recipeId = idCheck.recipeId!;
 
   const body = await parseJsonBody(context.request);
   const parsed = updateRecipeSchema.safeParse(body);
@@ -199,10 +193,7 @@ export const DELETE: APIRoute = async (context) => {
     });
     return idCheck.response;
   }
-  const recipeId = idCheck.recipeId;
-  if (!recipeId) {
-    return jsonError("VALIDATION_ERROR", "Recipe id is required", 400);
-  }
+  const recipeId = idCheck.recipeId!;
 
   const { data, error } = await deleteRecipe(auth.supabase, auth.userId, recipeId);
   if (error) {
